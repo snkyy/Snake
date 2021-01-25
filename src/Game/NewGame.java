@@ -121,9 +121,13 @@ public class NewGame
             switch(key.getCode())
             {
                 case UP: if(CURR_DIR != Direction.DOWN) CURR_DIR = Direction.UP; break;
+                case W: if(CURR_DIR != Direction.DOWN) CURR_DIR = Direction.UP; break;
                 case DOWN: if(CURR_DIR != Direction.UP) CURR_DIR = Direction.DOWN; break;
+                case S: if(CURR_DIR != Direction.UP) CURR_DIR = Direction.DOWN; break;
                 case LEFT: if(CURR_DIR != Direction.RIGHT) CURR_DIR = Direction.LEFT; break;
+                case A: if(CURR_DIR != Direction.RIGHT) CURR_DIR = Direction.LEFT; break;
                 case RIGHT: if(CURR_DIR != Direction.LEFT) CURR_DIR = Direction.RIGHT; break;
+                case D: if(CURR_DIR != Direction.LEFT) CURR_DIR = Direction.RIGHT; break;
             }
         });
 
