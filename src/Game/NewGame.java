@@ -90,6 +90,7 @@ public class NewGame
                     back.setText("Main Menu");
                     back.setPrefSize(170,50);
                     VBox b = new VBox();
+
                     b.setPadding(new Insets(420,0,0,220));
                     b.getChildren().add(back);
                     root.getChildren().add(b);
@@ -119,10 +120,10 @@ public class NewGame
         {
             switch(key.getCode())
             {
-                case W: if(CURR_DIR != Direction.DOWN) CURR_DIR = Direction.UP; break;
-                case S: if(CURR_DIR != Direction.UP) CURR_DIR = Direction.DOWN; break;
-                case A: if(CURR_DIR != Direction.RIGHT) CURR_DIR = Direction.LEFT; break;
-                case D: if(CURR_DIR != Direction.LEFT) CURR_DIR = Direction.RIGHT; break;
+                case UP: if(CURR_DIR != Direction.DOWN) CURR_DIR = Direction.UP; break;
+                case DOWN: if(CURR_DIR != Direction.UP) CURR_DIR = Direction.DOWN; break;
+                case LEFT: if(CURR_DIR != Direction.RIGHT) CURR_DIR = Direction.LEFT; break;
+                case RIGHT: if(CURR_DIR != Direction.LEFT) CURR_DIR = Direction.RIGHT; break;
             }
         });
 
