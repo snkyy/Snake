@@ -10,7 +10,7 @@ public class Model
     public static int EATEN = 0;
     public static int AX;
     public static int AY;
-    public static int TICK = 80000000;
+    public static int TICK = 100000000;
     public static boolean DEAD = false;
     public static ArrayList<Square> body = new ArrayList<>();
     public static Direction CURR_DIR = Direction.LEFT;
